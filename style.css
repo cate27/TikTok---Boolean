@@ -102,6 +102,7 @@ img.arrow-up {
     width: 80px;
     position: relative;
     margin: 0 auto;
+    bottom: 3rem;
 }
 
 .controls {
