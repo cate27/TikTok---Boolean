@@ -1,0 +1,129 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* App Style */
+#app-container {
+    max-width: 430px;
+    height: 100dvh;
+    margin: 0 auto;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory; /* Abilita lo scroll a scatto verticale */
+    scrollbar-width: none; /* Nasconde la scrollbar su Firefox */
+}
+
+#app-container::-webkit-scrollbar {
+    display: none; /* Nasconde la scrollbar su Webkit (Chrome, Safari) */
+}
+
+.screen {
+    height: 100%;
+    scroll-snap-align: start; /* Ogni schermata si aggancia all'inizio del contenitore */
+    position: relative;
+    color: white;
+}
+
+.background {
+    background: url("./assets/img/background.jpg") center;
+    background-size: cover;
+}
+
+div#logo {
+    position: relative;
+    top: 4rem;
+}
+
+img.logo {
+    width: 130px;
+    display: block;
+    margin: 0 auto;
+}
+
+img, video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div#img {
+    position: relative;
+    top: 8rem;
+}
+
+img.img {
+    width: 220px;
+    margin: 0 auto;
+    border-radius: 2rem;
+}
+
+div#subtitleText {
+    position: relative;
+    top: 11rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.3rem;
+    color: black;
+    font-family: math;
+}
+
+div#text {
+    position: relative;
+    top: 10rem;
+}
+  
+.arc-text {
+    position: relative;
+    height: 150px;
+}
+  
+.arc-text span {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform-origin: bottom center;
+    transform: rotate(calc(var(--i) * 20deg - 90deg)) translateY(-120px);
+    font-weight: bold;
+    color: black;
+    font-family: sans-serif;
+}
+
+img.arrow-up {
+    width: 80px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.username, .description {
+    margin-bottom: 10px;
+}
+
+.audio {
+    font-size: 14px;
+}

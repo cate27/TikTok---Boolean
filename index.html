@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TikTok</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- My Style -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="app-container">
+            <div class="screen background">
+                <div id="logo">
+                    <img class="logo" src="assets/img/logo.jpg" alt="Logo della pagina" />
+                </div>
+                <div id="img">
+                    <img class="img" src="assets/img/Tik.png" alt="Logo creato da me">
+                </div>
+                <div id="subtitleText">
+                    <p>Scorri verso l'alto per il prossimo video</p>
+                    <p>Tap <i class="fa-solid fa-volume-xmark"></i> per attivare l'audio</p>
+                </div>
+                <div id="text">
+                    <div class="arc-text">
+                        <span style="--i:0">F</span>
+                        <span style="--i:1">E</span>
+                        <span style="--i:2">E</span>
+                        <span style="--i:3">D</span>
+                        <span style="--i:4"> </span>
+                        <span style="--i:5">V</span>
+                        <span style="--i:6">I</span>
+                        <span style="--i:7">D</span>
+                        <span style="--i:8">E</span>
+                        <span style="--i:9">O</span>
+                    </div>
+                    <img src="assets/img/icons8-doppio-sù.gif" alt="Gif icona sopra" class="arrow-up"/>
+                </div>
+            </div>
+            <div class="screen">
+                <video src="assets/video/agropoli.mp4" playsinline loop muted></video>
+                <div class="controls">
+                    <i class="fa-solid fa-volume-xmark volume"></i>
+                    <i class="fa-solid fa-heart hearts"></i>
+                    <i class="fa-solid fa-comment"></i>
+                </div>
+                <div class="info">
+                    <h4 class="username">@vrgirl</h4>
+                    <p class="description">Agropoli #sky #boat #afternoon</p>
+                    <p class="audio"><i class="fa-solid fa-music"></i> Musica originale - Artista</p>
+                </div>
+            </div>
+            <div class="screen">
+                <video src="assets/video/sardegna.mp4" playsinline loop muted></video>
+                <div class="controls">
+                    <i class="fa-solid fa-volume-xmark volume"></i>
+                    <i class="fa-solid fa-heart hearts"></i>
+                    <i class="fa-solid fa-comment"></i>
+                </div>
+                <div class="info">
+                    <h4 class="username">@serendipity</h4>
+                    <p class="description">Sardegna #sky #pisces</p>
+                    <p class="audio"><i class="fa-solid fa-music"></i> Musica originale - Artista</p>
+                </div>
+            </div>
+            <div class="screen">
+                <video src="assets/video/parigi.mp4" playsinline loop muted></video>
+                <div class="controls">
+                    <i class="fa-solid fa-volume-xmark volume"></i>
+                    <i class="fa-solid fa-heart hearts"></i>
+                    <i class="fa-solid fa-comment"></i>
+                </div>
+                <div class="info">
+                    <h4 class="username">@just4fun</h4>
+                    <p class="description">Parigi #life #torreEffeil</p>
+                    <p class="audio"><i class="fa-solid fa-music"></i> Musica originale - Artista</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
